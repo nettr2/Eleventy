@@ -1,5 +1,6 @@
 exports.data = {
     title: "My Rad Blog"
+    
   };
   
   exports.render = function(data) {
