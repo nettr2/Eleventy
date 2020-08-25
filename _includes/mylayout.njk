@@ -8,8 +8,22 @@ title: My Rad Blog
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="  crossorigin="anonymous"></script>
+    <script>   
+      //kirstin adding 
+         $(document).ready(function () {
+           $("#togglebutton").click(function(){
+              $("#show").toggle();
+            });
+        });
+      </script>       
+      
   </head>
   <body>
     {{ content | safe }}
+    <button type="button"  onclick=myFunction>Click me!</button>
+      <p id="demo"></p>
+      <button id="togglebutton">Toggle Copyright</button>
+      <p id="show"><span>&#169;</span>Copyright Of the Cool Kids Project Club</p>
   </body>
 </html>
